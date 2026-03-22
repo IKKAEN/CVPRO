@@ -196,9 +196,10 @@ nav.scrolled {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  gap: 60px;
   position: relative;
   overflow: hidden;
-  padding: 120px 5% 80px;
+  padding: 120px 8% 80px;
 }
 
 /* Parallax bg */
@@ -236,8 +237,9 @@ nav.scrolled {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 700px;
+  max-width: 600px;
   flex: 1;
+  min-width: 0;
 }
 
 .hero-eyebrow {
@@ -259,7 +261,7 @@ nav.scrolled {
 
 .hero-name {
   font-family: var(--font-title);
-  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-size: clamp(2.2rem, 4.5vw, 4.2rem);
   font-weight: 900;
   line-height: 1;
   color: var(--white);
@@ -273,10 +275,11 @@ nav.scrolled {
   overflow: hidden;
   animation: typing 2.8s steps(22, end) forwards, blink-cursor 0.8s step-end 3s forwards;
   width: 0;
+  max-width: 100%;
 }
 @keyframes typing {
   from { width: 0; }
-  to { width: 100%; }
+  to { width: 22ch; }
 }
 @keyframes blink-cursor {
   0%,100% { border-color: transparent; }
@@ -1372,7 +1375,8 @@ footer span { color: var(--gold); }
   <div class="hero-content">
     <div class="availability-badge">
       <span class="availability-dot"></span>
-      Disponible pour alternance · Rentrée 2025
+      Disponible pour alternance · Rentrée 2027
+}
     </div>
     <div class="hero-eyebrow">Candidature alternance</div>
     <h1 class="hero-name">
@@ -1871,7 +1875,7 @@ footer span { color: var(--gold); }
     <div data-aos="fade-right">
       <h3 class="contact-headline">Vous avez un projet<br>pour <span>Quentin</span> ?</h3>
       <p class="contact-body">
-        Disponible pour une alternance dès la rentrée 2025-2027 dans le cadre d'un Bachelor Management. N'hésitez pas à me contacter pour échanger sur une opportunité.
+        Disponible pour une alternance dès la rentrée 2027 dans le cadre d'un Bachelor Management. N'hésitez pas à me contacter pour échanger sur une opportunité.
       </p>
       <div class="contact-links">
         <a href="tel:0638428562" class="contact-link">
